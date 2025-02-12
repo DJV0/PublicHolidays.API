@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35707.178 d17.12
+VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PublicHolidays.API", "PublicHolidays.API\PublicHolidays.API.csproj", "{D31A74C7-D77C-44DA-8220-624BA17DE27B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PublicHolidays.Domain", "PublicHolidays.Domain\PublicHolidays.Domain.csproj", "{821117B7-B9F5-49ED-A8A8-9F85279B9C29}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{D31A74C7-D77C-44DA-8220-624BA17DE27B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D31A74C7-D77C-44DA-8220-624BA17DE27B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D31A74C7-D77C-44DA-8220-624BA17DE27B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{821117B7-B9F5-49ED-A8A8-9F85279B9C29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{821117B7-B9F5-49ED-A8A8-9F85279B9C29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{821117B7-B9F5-49ED-A8A8-9F85279B9C29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{821117B7-B9F5-49ED-A8A8-9F85279B9C29}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
