@@ -1,0 +1,30 @@
+services:
+  publicholidays.api:
+    image: ${DOCKER_REGISTRY-}publicholidaysapi
+    build:
+      context: .
+      dockerfile: PublicHolidays.API/Dockerfile
+    ports:
+      - "8080:8080"
+      - "8081:8081"
+    depends_on:
+      - db
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__PublicHolidaysDb=Server=db,1433;Database=PublicHolidaysDb;User Id=sa;Password=MyStrong!Passw0rd;TrustServerCertificate=True;
+    networks:
+      - app_network
+  db:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: sql_db
+    restart: always
+    ports:
+        - "1433:1433"
+    environment:
+        SA_PASSWORD: "MyStrong!Passw0rd"
+        ACCEPT_EULA: "sa"
+    networks:
+        - app_network
+networks:
+  app_network:
+    driver: bridge
