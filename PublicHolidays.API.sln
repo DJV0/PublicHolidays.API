@@ -7,6 +7,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PublicHolidays.API", "Publi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PublicHolidays.Domain", "PublicHolidays.Domain\PublicHolidays.Domain.csproj", "{821117B7-B9F5-49ED-A8A8-9F85279B9C29}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PublicHolidays.Services", "PublicHolidays.Services\PublicHolidays.Services.csproj", "{AF7BA47E-80F5-4C1B-839E-CF2DB548C923}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{C644B802-EEB4-4177-AEF5-6CD0E97BC959}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PublicHolidays.Tests", "PublicHolidays.Tests\PublicHolidays.Tests.csproj", "{1223F90A-D726-460B-82E2-AF3484CA694A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared.Domain", "Shared.Domain\Shared.Domain.csproj", "{9563A97F-ACB6-4B5D-A3E4-9CD20103D377}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared.Contracts", "Shared.Contracts\Shared.Contracts.csproj", "{4BBEF402-095D-4F3C-AD2D-99FD8891D1A3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,8 +31,27 @@ Global
 		{821117B7-B9F5-49ED-A8A8-9F85279B9C29}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{821117B7-B9F5-49ED-A8A8-9F85279B9C29}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{821117B7-B9F5-49ED-A8A8-9F85279B9C29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF7BA47E-80F5-4C1B-839E-CF2DB548C923}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF7BA47E-80F5-4C1B-839E-CF2DB548C923}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF7BA47E-80F5-4C1B-839E-CF2DB548C923}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF7BA47E-80F5-4C1B-839E-CF2DB548C923}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1223F90A-D726-460B-82E2-AF3484CA694A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1223F90A-D726-460B-82E2-AF3484CA694A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1223F90A-D726-460B-82E2-AF3484CA694A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1223F90A-D726-460B-82E2-AF3484CA694A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9563A97F-ACB6-4B5D-A3E4-9CD20103D377}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9563A97F-ACB6-4B5D-A3E4-9CD20103D377}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9563A97F-ACB6-4B5D-A3E4-9CD20103D377}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9563A97F-ACB6-4B5D-A3E4-9CD20103D377}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BBEF402-095D-4F3C-AD2D-99FD8891D1A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BBEF402-095D-4F3C-AD2D-99FD8891D1A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BBEF402-095D-4F3C-AD2D-99FD8891D1A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BBEF402-095D-4F3C-AD2D-99FD8891D1A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1223F90A-D726-460B-82E2-AF3484CA694A} = {C644B802-EEB4-4177-AEF5-6CD0E97BC959}
 	EndGlobalSection
 EndGlobal
