@@ -61,5 +61,22 @@ namespace PublicHolidays.API.Controllers
 
             return Ok(result);
         }
+
+        /// <summary>
+        /// Returns max number of freedays in a row for given year and country
+        /// </summary>
+        /// <param name="year">Year to calcutale max number for</param>
+        /// <param name="countryCode">Country to calculate max number for</param>
+        /// <returns>Number of max freedays in a row</returns>
+        [HttpGet("maxNumberOfFreeDaysInRow")]
+        [ProducesResponseType(typeof(MaxNumberOfFreedaysInRowResult), StatusCodes.Status200OK)]
+        public async Task<IActionResult> GetMaxNumberOfFreeDaysInRowAsync([FromQuery] int year, [FromQuery] string countryCode)
+        {
+            var numberOfDays = await _holidayService.GetMaxNumberOfFreeDaysInRowAsync(year, countryCode);
+
+            var result = new MaxNumberOfFreedaysInRowResult() { MaxNumberOfFreedaysInRow = numberOfDays };
+
+            return Ok(result);
+        }
     }
 }

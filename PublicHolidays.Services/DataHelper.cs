@@ -1,9 +1,10 @@
 ﻿using PublicHolidays.Domain.Abstractions;
+using PublicHolidays.Services.Abstractions;
 using PublicHolidays.Services.ApiClients;
 
 namespace PublicHolidays.Services
 {
-    public class DataHelper
+    public class DataHelper : IDataHelper
     {
         private readonly ICountryRepository _countryRepository;
         private readonly IHolidayRepository _holidayRepository;

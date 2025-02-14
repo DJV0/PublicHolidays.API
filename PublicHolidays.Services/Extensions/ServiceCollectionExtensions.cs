@@ -10,7 +10,7 @@ namespace PublicHolidays.Services.Extensions
         {
             _ = services.AddScoped<ICountryService, CountryService>()
                 .AddScoped<IHolidayService, HolidayService>()
-                .AddScoped<DataHelper>();
+                .AddScoped<IDataHelper, DataHelper>();
 
             return services;
         }

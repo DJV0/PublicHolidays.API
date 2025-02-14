@@ -6,5 +6,6 @@ namespace PublicHolidays.Services.Abstractions
     {
         Task<IEnumerable<Shared.Domain.Models.HolidayDomain>> GetHolidaysByYearAsync(int year, string countryCode);
         Task<DateStatusEnum> GetDateStatusAsync(DateOnly date, string countryCode);
+        Task<int> GetMaxNumberOfFreeDaysInRowAsync(int year, string countryCode);
     }
 }
