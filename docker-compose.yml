@@ -11,7 +11,7 @@ services:
       - db
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-      - ConnectionStrings__PublicHolidaysDb=Server=db,1433;Database=PublicHolidaysDb;User Id=sa;Password=MyStrong!Passw0rd;TrustServerCertificate=True;
+      - ConnectionStrings__PublicHolidaysDb=Server=db,1433;Database=PublicHolidaysDb;User Id=myadmin;Password=MyStrong!Passw0rd;TrustServerCertificate=True;
     networks:
       - app_network
   db:
@@ -22,7 +22,7 @@ services:
         - "1433:1433"
     environment:
         SA_PASSWORD: "MyStrong!Passw0rd"
-        ACCEPT_EULA: "sa"
+        ACCEPT_EULA: "myadmin"
     networks:
         - app_network
 networks:
